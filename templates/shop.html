@@ -1,0 +1,350 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Productos - Vidrios Francisco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Somos una empresa con más de 10 años en el mercado, creando diseños de vanguardia y calidad.">
+	<meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> 
+    
+    <!-- All CSS Files -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/pe-icon-7-stroke.css">
+    <!-- Plugins css file -->
+    <link rel="stylesheet" href="/static/css/plugins.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Productos - Vidrios Francisco" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.vidriosfrancisco.com.ar/productos" />
+	<meta property="og:image" content="/static/img/vidriosfrancisco.jpg" />
+	<meta property="og:description" content="Somos una empresa con más de 10 años en el mercado, creando diseños de vanguardia y calidad." />
+
+    <!-- Modernizr JS -->
+    <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7L4Z8REPQH"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-7L4Z8REPQH');
+	</script>
+</head>
+
+<body>
+
+<!-- Body main wrapper start -->
+<div class="wrapper">
+
+<!-- START HEADER SECTION -->
+<header class="header-section section sticker header-transparent">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- logo -->
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="header-logo">
+                    <a href="https://www.vidriosfrancisco.com.ar"><img src="/static/img/logo.png" alt="main logo"></a>
+                </div>
+            </div>
+            <!-- header-search & total-cart -->
+            <div class="col-md-2 col-sm-6 col-xs-6 float-right">
+                <div class="header-option-btns float-right">
+           
+                    
+                    <!-- Header Cart -->
+                    <div class="header-cart float-left" id="carrito">
+                        <!-- Cart Toggle -->
+                        <a class="cart-toggle" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-cart"></i>
+                            <span>{{len}}</span>
+                        </a>
+                        <!-- Mini Cart Brief -->
+                        <div class="mini-cart-brief dropdown-menu text-left">
+                            <div class="cart-items"><p>Tenes <span>{{len}} items</span> en tu carrito</p></div>
+                            <!-- Cart Products -->
+                            <div class="all-cart-product clearfix">
+                                {%for llave in carrito.keys()%}
+                                    <div class="single-cart clearfix">
+                                        <div class="cart-image">
+                                            <img src="{{carrito[llave]['img']}}" alt="vidrios francisco">
+                                        </div>
+                                        <div class="cart-info">
+                                            <h5>{{llave}}</h5>
+                                            <p>Precio : ${{carrito[llave]['precio']}}</p>
+                                            <p>Cantidad : {{carrito[llave]['cantidad']}}</p>
+                                            <a href="#" class="cart-delete" title="Borrar este producto"><i class="pe-7s-trash"></i></a>
+                                        </div>
+                                    </div>
+                                {%endfor%}
+                            </div>
+                            <!-- Cart Total -->
+                            <div class="cart-totals">
+                                <h5>Total <span>${{total}}</span></h5>
+                            </div>
+                            <!-- Cart Button -->
+                            <div class="cart-bottom  clearfix">
+                                <a href="https://www.vidriosfrancisco.com.ar/checkout.html">VER PEDIDO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- primary-menu -->
+            <div class="col-md-8 col-xs-12">
+                <nav class="main-menu text-center">
+                    <ul>
+                        <li><a href="https://www.vidriosfrancisco.com.ar">INICIO</a>
+                        </li>
+                        <li class="active"><a href="https://www.vidriosfrancisco.com.ar/productos">PRODUCTOS</a>
+                        </li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/nosotros.html">NOSOTROS</a>
+                        </li>
+						<li><a href="https://www.vidriosfrancisco.com.ar/comocomprar.html">CÓMO COMPRAR</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER SECTION -->
+
+
+
+<!-- PAGE BANNER SECTION -->
+<div class="page-banner-section section">
+    <div class="container">
+        <div class="row">
+            <div class="page-banner-content col-xs-12">
+                <h2>Catálogo</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE BANNER SECTION -->
+    
+<!-- PAGE SECTION START -->
+<div class="page-section section pt-100 pb-60">
+    <div class="container">
+        <div class="row">
+				
+		<div class="col-lg-3 col-md-4 col-xs-12">
+
+				<div class="single-sidebar mb-40">
+                    <h3 class="sidebar-title">Categorías</h3>
+                    <ul class="category-sidebar">
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/espejos-redondos">Espejos Redondos</a></li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/espejos-rectangulares">Espejos Rectangulares</a></li>
+						<li><a href="https://www.vidriosfrancisco.com.ar/productos/promos">Otras Promos</a></li>
+                    </ul>
+                </div>
+             
+                <div class="single-sidebar mb-40">
+                    <h3 class="sidebar-title">Colores</h3>
+                    <ul class="color-sidebar">
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/blanco"><i style="background-color: #FFFFFF;"></i><span>Blanco</span></a></li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/negro"><i style="background-color: #000000;"></i><span>Negro</span></a></li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/cobre"><i style="background-color: #CB6D51;"></i><span>Cobre</span></a></li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/plata"><i style="background-color: #C0C0C0;"></i><span>Plata</span></a></li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/peltre"><i style="background-color: #666666;"></i><span>Peltre</span></a></li>
+                    </ul>
+                </div>
+               	
+				<div id="ocultar">
+			    <div class="single-sidebar mb-40">
+                    <h3 class="sidebar-title">Tamaños</h3>
+                    <ul class="category-sidebar">
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/40">40</a></li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/50">50</a></li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/60">60</a></li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos/70">70</a></li>
+						<li><a href="https://www.vidriosfrancisco.com.ar/productos/80">80</a></li>
+                    </ul>
+                </div>
+                </div>
+  
+            </div>
+			
+			
+            <div class="col-lg-9 col-md-8 col-xs-12 float-right">
+                <div class="shop-bar mb-30">
+            
+                </div>
+                <div class="tab-content section">
+                    <div class="tab-pane active row" id="product-grid">
+                        {%for template in product_template%}
+                        <!-- product-item start -->
+                        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-6 col-xs-wide mb-40">
+                            <div class="product-item text-center">
+                                <div class="product-img">
+								
+									<a class="image" href="{{url_for('product_details', name=template.url)}}"><img src="{{template.get_image()}}" alt="Espejo Vidrios Francisco" /></a>
+                                    <a href="{{url_for('product_details', name=template.url)}}" class="add-to-cart">VER</a>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title"><a href="{{url_for('product_details', name=template.url)}}">{{template.name}}</a></h5>
+                                    <span class="price"><span class="new">${{template.list_price}}</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-item end -->
+                        {%endfor%}
+                    </div>
+                </div>
+            </div>
+            
+			
+			
+        </div>
+    </div>
+</div>
+<!-- PAGE SECTION END -->
+    
+<!-- SERVICE SECTION START -->
+<div class="service-section section pt-70 pb-40">
+    <div class="container">
+        <div class="row">
+            <!-- Single Service -->
+            <div class="single-service col-md-3 col-sm-6 col-xs-6 mb-30">
+                <div class="service-icon">
+                    <i class="pe-7s-world"></i>
+                </div>
+                <div class="service-title">
+                    <h3>ENVÍOS A TODO EL PAIS</h3>
+                    <p>Por logística propia, Fletes, Correo y por Encomiendas.</p>
+                </div>
+            </div>
+            <!-- Single Service -->
+            <div class="single-service col-md-3 col-sm-6 col-xs-6 mb-30">
+                <div class="service-icon">
+                    <i class="pe-7s-refresh"></i>
+                </div>
+                <div class="service-title">
+                    <h3>COMPRA PROTEGIDA</h3>
+                    <p>Te acompañamos hasta que recibas lo que compraste.</p>
+                </div>
+            </div>
+            <!-- Single Service -->
+            <div class="single-service col-md-3 col-sm-6 col-xs-6 mb-30">
+                <div class="service-icon">
+                    <i class="pe-7s-headphones"></i>
+                </div>
+                <div class="service-title">
+                    <h3>SIEMPRE EN CONTACTO</h3>
+                    <p>Estamos para ayudarte por Whatsapp +541123361036.</p>
+                </div>
+            </div>
+            <!-- Single Service -->
+            <div class="single-service col-md-3 col-sm-6 col-xs-6 mb-30">
+                <div class="service-icon">
+                    <i class="pe-7s-gift"></i>
+                </div>
+                <div class="service-title">
+                    <h3>TODAS LAS FORMAS DE PAGO</h3>
+                    <p>En efectivo, MercadoPago o por transferencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SERVICE SECTION END -->
+    
+	
+<!-- FOOTER TOP SECTION START -->
+<div class="footer-top-section section pb-60 pt-100">
+	<div class="container">
+		<div class="row">
+            <!-- Footer Widget -->
+			<div class="footer-widget col-md-3 col-sm-6 col-xs-12 mb-40">
+				<h4 class="widget-title">INFORMACIÓN DE CONTACTO</h4>
+				<p><strong>Dirección:</strong> <span> San Miguel, Buenos Aires.</span></p>
+				<p><strong>Teléfono:</strong> <span> +54 1123361036</span></p>
+				<!-- Footer Social -->
+				<div class="footer-social fix">
+					<a href="https://www.facebook.com/Francisco-Vidrios-113537717013124/"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.instagram.com/vidriosfrancisco"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+			<!-- Footer Widget -->
+			<div class="footer-widget link-widget col-md-3 col-sm-6 col-xs-12 mb-40">
+				<h4 class="widget-title">ACCESOS</h4>
+				<ul>
+					<li><a href="https://www.vidriosfrancisco.com.ar">INICIO</a></li>
+					<li><a href="https://www.vidriosfrancisco.com.ar/productos">PRODUCTOS</a></li>
+					<li><a href="https://www.vidriosfrancisco.com.ar/nosotros.html">NOSOTROS</a></li>
+					<li><a href="https://www.vidriosfrancisco.com.ar/comocomprar.html">CÓMO COMPRAR</a></li>
+					</ul>
+			</div>
+			<!-- Footer Widget -->
+			<div class="footer-widget col-md-3 col-sm-6 col-xs-12 mb-40">
+				<h4 class="widget-title">Etiquetas</h4>
+				<div class="tag-cloud fix">
+					<a href="https://www.vidriosfrancisco.com.ar">Vidrios</a>
+				    <a href="https://www.vidriosfrancisco.com.ar">Decoración</a>
+					<a href="https://www.vidriosfrancisco.com.ar/productos/espejos-redondos">Espejos Redondos</a>
+				    <a href="https://www.vidriosfrancisco.com.ar">Vidrios Francisco</a>
+				    <a href="https://www.vidriosfrancisco.com.ar">Espejos</a>
+				    <a href="https://www.vidriosfrancisco.com.ar/productos/espejos-rectangulares">Espejos Rectangulares</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- FOOTER TOP SECTION END -->  
+
+<!-- FOOTER BOTTOM SECTION START -->
+<div class="footer-bottom-section section pb-20 pt-20">
+	<div class="container">
+		<div class="row">
+            <!-- Copyright -->
+			<div class="copyright text-left col-sm-6 col-xs-12">
+				<p>Desarrollado por <a href="https://www.mejorpedido.com" title="Ecommerce tienda por WhatsApp" target="_blank"><strong>Mejor Pedido</strong></a> 2021.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FOOTER BOTTOM SECTION END -->  
+   
+   
+  
+</div>
+<!-- Body main wrapper end -->
+
+
+<!-- Placed JS at the end of the document so the pages load faster -->
+
+<!-- jQuery latest version -->
+<script src="/static/js/vendor/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap js -->
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="/static/js/plugins.js"></script>
+<!-- Ajax Mail js -->
+<script src="/static/js/ajax-mail.js"></script>
+<!-- Main js -->
+<script src="/static/js/main.js"></script>
+<!-- Propios js -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/product-details.js') }}"></script>
+
+</body>
+
+</html>

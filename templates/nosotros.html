@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Nosotros - Vidrios Francisco</title>
+    <meta name="description" content="Somos una empresa con más de 10 años en el mercado, creando diseños de vanguardia y calidad.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> 
+    
+    <!-- All CSS Files -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/pe-icon-7-stroke.css">
+    <!-- Plugins css file -->
+    <link rel="stylesheet" href="/static/css/plugins.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Nosotros - Vidrios Francisco" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.vidriosfrancisco.com.ar/nosotros.html" />
+	<meta property="og:image" content="/static/img/vidriosfrancisco1.jpg" />
+	<meta property="og:description" content="Somos una empresa con más de 10 años en el mercado, creando diseños de vanguardia y calidad." />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7L4Z8REPQH"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-7L4Z8REPQH');
+	</script>
+</head>
+
+<body>
+
+<!-- Body main wrapper start -->
+<div class="wrapper">
+
+<!-- START HEADER SECTION -->
+<header class="header-section section sticker header-transparent">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- logo -->
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="header-logo">
+                    <a href="https://www.vidriosfrancisco.com.ar"><img src="/static/img/logo.png" alt="main logo"></a>
+                </div>
+            </div>
+            <!-- header-search & total-cart -->
+            <div class="col-md-2 col-sm-6 col-xs-6 float-right">
+                <div class="header-option-btns float-right">
+           
+                    
+                    <!-- Header Cart -->
+                    <div class="header-cart float-left" id="carrito">
+                        <!-- Cart Toggle -->
+                        <a class="cart-toggle" href="#" data-toggle="dropdown">
+                            <i class="pe-7s-cart"></i>
+                            <span>{{len}}</span>
+                        </a>
+                        <!-- Mini Cart Brief -->
+                        <div class="mini-cart-brief dropdown-menu text-left">
+                            <div class="cart-items"><p>Tenes <span>{{len}} items</span> en tu carrito</p></div>
+                            <!-- Cart Products -->
+                            <div class="all-cart-product clearfix">
+                                {%for llave in carrito.keys()%}
+                                    <div class="single-cart clearfix">
+                                        <div class="cart-image">
+                                            <img src="{{carrito[llave]['img']}}" alt="vidrios francisco">
+                                        </div>
+                                        <div class="cart-info">
+                                            <h5>{{llave}}</h5>
+                                            <p>Precio : ${{carrito[llave]['precio']}}</p>
+                                            <p>Cantidad : {{carrito[llave]['cantidad']}}</p>
+                                            <a href="#" class="cart-delete" title="Borrar este producto"><i class="pe-7s-trash"></i></a>
+                                        </div>
+                                    </div>
+                                {%endfor%}
+                            </div>
+                            <!-- Cart Total -->
+                            <div class="cart-totals">
+                                <h5>Total <span>${{total}}</span></h5>
+                            </div>
+                            <!-- Cart Button -->
+                            <div class="cart-bottom  clearfix">
+                                <a href="https://www.vidriosfrancisco.com.ar/checkout.html">VER PEDIDO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- primary-menu -->
+            <div class="col-md-8 col-xs-12">
+                <nav class="main-menu text-center">
+                    <ul>
+                        <li><a href="https://www.vidriosfrancisco.com.ar">INICIO</a>
+                        </li>
+                        <li><a href="https://www.vidriosfrancisco.com.ar/productos">PRODUCTOS</a>
+                        </li>
+                        <li class="active"><a href="https://www.vidriosfrancisco.com.ar/nosotros.html">NOSOTROS</a>
+                        </li>
+						<li><a href="https://www.vidriosfrancisco.com.ar/comocomprar.html">CÓMO COMPRAR</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER SECTION -->
+
+
+<!-- PAGE BANNER SECTION -->
+<div class="page-banner-section section">
+    <div class="container">
+        <div class="row">
+            <div class="page-banner-content col-xs-12">
+                <h2>Sobre Vidrios Francisco</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE BANNER SECTION -->
+    
+<!-- PAGE SECTION START -->
+<div class="page-section section pt-100 pb-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-xs-12">
+                <!-- Single Blog Post -->
+                <div class="single-blog-post">
+				
+										
+                    <div class="blog-img">
+                        <img alt="" src="/static/img/blog/single.jpg">
+                    </div>
+                    <div class="blog-info">
+ 
+<p>Somos una empresa con más de 10 años en el mercado, creando diseños de vanguardia y calidad que nos distinguen.</p>
+
+<p>Hacemos ventanas a medida c/mosquiteros, paños fijos, mosquiteros, mamparas de baño, vendemos espejos de la medida que prefieras, todo con o sin colocación.</p>
+                    
+					<blockquote>
+                            <p>NOTA COMPLETA EN <a href="https://caras.perfil.com/noticias/caras-deco/vidrios-francisco-productos-de-vanguardia-y-calidad.phtml"><strong>REVISTA CARAS</strong></a></p>
+                        </blockquote>
+                        <p>Vidrios Francisco nació hace 10 años como una fábrica de aberturas y mamparas de baño. Con el pasar del tiempo nos fuimos reconvirtiéndo, trabajando en obras industriales, edificios y marcas de primera línea como: Peugeot, Freddo, entre otras.</p>
+						
+                    </div>
+                </div>
+
+				</div>
+            <div class="col-lg-3 col-md-4 col-xs-12">
+               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PAGE SECTION END --> 
+
+<a href="https://wa.me/541123361036?text=Hola!.%20Me%20gustaría%20hacer%20una%20consulta." class="whatsapp" target="_blank"><img src="/static/img/whatsapp.png" alt=""></a>    
+    
+<!-- FOOTER TOP SECTION START -->
+<div class="footer-top-section section pb-60 pt-100">
+	<div class="container">
+		<div class="row">
+            <!-- Footer Widget -->
+			<div class="footer-widget col-md-3 col-sm-6 col-xs-12 mb-40">
+				<h4 class="widget-title">INFORMACIÓN DE CONTACTO</h4>
+				<p><strong>Dirección:</strong> <span> San Miguel, Buenos Aires.</span></p>
+				<p><strong>Teléfono:</strong> <span> +54 1123361036</span></p>
+				<!-- Footer Social -->
+				<div class="footer-social fix">
+					<a href="https://www.facebook.com/Francisco-Vidrios-113537717013124/"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.instagram.com/vidriosfrancisco"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+			<!-- Footer Widget -->
+			<div class="footer-widget link-widget col-md-3 col-sm-6 col-xs-12 mb-40">
+				<h4 class="widget-title">ACCESOS</h4>
+				<ul>
+					<li><a href="https://www.vidriosfrancisco.com.ar">INICIO</a></li>
+					<li><a href="https://www.vidriosfrancisco.com.ar/productos">PRODUCTOS</a></li>
+					<li><a href="https://www.vidriosfrancisco.com.ar/nosotros.html">NOSOTROS</a></li>
+					<li><a href="https://www.vidriosfrancisco.com.ar/comocomprar.html">CÓMO COMPRAR</a></li>
+					</ul>
+			</div>
+			<!-- Footer Widget -->
+			<div class="footer-widget col-md-3 col-sm-6 col-xs-12 mb-40">
+				<h4 class="widget-title">Etiquetas</h4>
+				<div class="tag-cloud fix">
+					<a href="https://www.vidriosfrancisco.com.ar">Vidrios</a>
+				    <a href="https://www.vidriosfrancisco.com.ar">Decoración</a>
+					<a href="https://www.vidriosfrancisco.com.ar/productos/espejos-redondos">Espejos Redondos</a>
+				    <a href="https://www.vidriosfrancisco.com.ar">Vidrios Francisco</a>
+				    <a href="https://www.vidriosfrancisco.com.ar">Espejos</a>
+				    <a href="https://www.vidriosfrancisco.com.ar/productos/espejos-rectangulares">Espejos Rectangulares</a>
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- FOOTER TOP SECTION END -->  
+
+<!-- FOOTER BOTTOM SECTION START -->
+<div class="footer-bottom-section section pb-20 pt-20">
+	<div class="container">
+		<div class="row">
+            <!-- Copyright -->
+			<div class="copyright text-left col-sm-6 col-xs-12">
+				<p>Desarrollado por <a href="https://www.mejorpedido.com" title="Ecommerce tienda por WhatsApp" target="_blank"><strong>Mejor Pedido</strong></a> 2021.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FOOTER BOTTOM SECTION END -->  
+  
+   
+  
+</div>
+<!-- Body main wrapper end -->
+
+
+<!-- Placed JS at the end of the document so the pages load faster -->
+
+<!-- jQuery latest version -->
+<script src="/static/js/vendor/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap js -->
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="/static/js/plugins.js"></script>
+<!-- Ajax Mail js -->
+<script src="/static/js/ajax-mail.js"></script>
+<!-- Main js -->
+<script src="/static/js/main.js"></script>
+<!-- Propios js -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/product-details.js') }}"></script>
+
+</body>
+
+</html>
